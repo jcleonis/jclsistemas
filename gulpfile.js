@@ -3,18 +3,19 @@ var sass = require('gulp-sass');
 var cssclean = require('gulp-clean-css');
 var htmlmin = require('gulp-htmlmin');
 var notify = require('gulp-notify');
+var imagemin = require('gulp-imagemin');
 
-var srcDirectoryScss = './src/scss/**/*.scss'
-var distDirectoryCss = './dist/css/**/'
+var srcDirectoryScss = './src/scss/**/*.scss';
+var distDirectoryCss = './dist/css/';
 
-var srcDirectoryJScript = './src/js/**/*.js'
-var distDirectoryJScript = './dist/js/**/'
+var srcDirectoryJScript = './src/js/**/*.js';
+var distDirectoryJScript = './dist/js/';
 
-var srcDirectoryHtml = './src/**/*.html'
-var distDirectoryHtml = './dist/**/'
+var srcDirectoryHtml = './src/**/*.html';
+var distDirectoryHtml = './dist/';
 
-var srcDirectoryImages = './src/img/**/*.*'
-var distDirectoryImages = './dist/img/**/'
+var srcDirectoryImages = './src/img/**/*.*';
+var distDirectoryImage = './dist/img/';
 
 // Esta tarefa compila o sass e minifica o CSS e copia para a pasta dist/css
 gulp.task('css', function() {
@@ -38,10 +39,15 @@ gulp.task('html', function() {
         .pipe(gulp.dest(distDirectoryHtml));
 });
 
+gulp.task('images', function() {
+    return gulp.src(srcDirectoryImages)
+        .pipe(imagemin({ optimizationLevel: 5 }))
+        .pipe(gulp.dest(distDirectoryImage));
+});
 
 gulp.task('dev', function() {
-    gulp.watch(srcDirectorySass, ['css']);
+    gulp.watch(srcDirectoryScss, ['css']);
     gulp.watch(srcDirectoryHtml, ['html']);
 });
 
-gulp.task('default', ['css', 'html'])
+gulp.task('default', ['css', 'html', 'image']);
