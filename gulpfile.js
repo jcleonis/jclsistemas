@@ -11,7 +11,7 @@ var distDirectoryCss = './dist/css/';
 var srcDirectoryJScript = './src/js/**/*.js';
 var distDirectoryJScript = './dist/js/';
 
-var srcDirectoryHtml = './src/**/*.html';
+var srcDirectoryHtml = './src/html/*.html';
 var distDirectoryHtml = './dist/';
 
 var srcDirectoryImages = './src/img/**/*.*';
@@ -50,4 +50,4 @@ gulp.task('dev', function() {
     gulp.watch(srcDirectoryHtml, ['html']);
 });
 
-gulp.task('default', ['css', 'html', 'image']);
+gulp.task('default', ['css', 'html', 'images']);
