@@ -1,0 +1,23 @@
+{
+  "name": "www.jclsistemas.com.br",
+  "description": "Site JCL Sistemas",
+  "main": "index.js",
+  "authors": [
+    "Jônatas Leonis"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "v4.0.0-alpha.6",
+    "animate.css": "^3.5.2",
+    "wow": "wow.js#^1.1.2"
+  }
+}
