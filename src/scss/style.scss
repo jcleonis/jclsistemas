@@ -1,15 +1,12 @@
+@import '../components/bootstrap/scss/bootstrap.scss';
 @import 'variables.scss';
 @import 'mixins.scss';
-// @import '../components/bootstrap/scss/bootstrap.scss';
-// MENUBAR
-.pantone {
-    color: #0b409c;
-    color: #10316B;
-    color: #F97300;
-    color: #FDBE34;
-    color: #F2F7FF;
-}
-
 .menu-logotipo {
     width: 6.5rem;
+}
+
+.nome-empresa {
+    @extend .col-md-4;
+    font-size: 30px;
+    color: $blue-dark;
 }

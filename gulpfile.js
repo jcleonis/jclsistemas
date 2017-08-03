@@ -12,7 +12,7 @@ var srcDirectoryJScript = './src/js/**/*.js';
 var distDirectoryJScript = './dist/js/';
 
 var srcDirectoryHtml = './src/html/*.html';
-var distDirectoryHtml = './dist/';
+var distDirectoryHtml = './dist';
 
 var srcDirectoryImages = './src/img/**/*.*';
 var distDirectoryImage = './dist/img/';
