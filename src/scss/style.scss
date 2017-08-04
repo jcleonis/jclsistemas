@@ -1,12 +1,4 @@
 @import '../components/bootstrap/scss/bootstrap.scss';
 @import 'variables.scss';
 @import 'mixins.scss';
-.menu-logotipo {
-    width: 6.5rem;
-}
-
-.nome-empresa {
-    @extend .col-md-4;
-    font-size: 30px;
-    color: $blue-dark;
-}
+@import 'home.scss';
