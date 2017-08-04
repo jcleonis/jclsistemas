@@ -2,7 +2,10 @@
     font-family: 'Montserrat','Lucida Grande', 'Lucida Sans', Arial, Sans-serif;
 }
 
-.menu-logotipo {
+a.navbar-brand{
+    display: block;
+}
+.navbar-logotipo {
     width: 3.5rem;
 }
 .nav-item {
