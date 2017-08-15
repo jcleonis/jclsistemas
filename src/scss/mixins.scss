@@ -1,0 +1,11 @@
+@mixin base_solution ($backcolor, $color) {
+    background-color: $backcolor;
+    color: $color;
+    //height: $height;
+    padding-top: 30px;
+}
+
+@mixin base_solution_caption_item($fontsize, $color) {
+    font-size: $fontsize;
+    color: $color;
+}
