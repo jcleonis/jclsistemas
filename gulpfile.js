@@ -73,7 +73,7 @@ gulp.task('images', function() {
             title: "copia e compressão das imagens",
             message: " <%= error.message%>"
         }))
-        .pipe(imagemin({ optimizationLevel: 10 }))
+        .pipe(imagemin({ optimizationLevel: 5 }))
         .pipe(gulp.dest(distDirectoryImage));
 });
 

@@ -3,14 +3,18 @@ a.navbar-brand {
 }
 
 .navbar-logotipo {
-    width: 4.1rem;
+    width: 4.45rem;
+}
+
+.navbar-toggler-icon {
+    color: $white;
 }
 
 .nav-item {
     margin: 15px;
     .nav-link {
         color: $white !important;
-        font-size: 0.85rem;
+        font-size: 1.15rem;
     }
 }
 
@@ -46,6 +50,17 @@ a.navbar-brand {
     z-index: 1;
 }
 
+@media only screen and (max-width: 640px) {
+    .wallpaper-caption {
+        position: absolute;
+        top: 40%;
+        margin-left: 7%;
+        width: 80%;
+        color: $white;
+        z-index: 1;
+    }
+}
+
 .wallpaper-caption>h1 {
     font-size: 2rem;
 }
@@ -66,8 +81,8 @@ a.navbar-brand {
 }
 
 .solutions {
-    @include base_solution($blue,
-    $white);
+    @include base_solution($gray,
+    $blue-dark);
 }
 
 .col-solution-caption {
@@ -77,7 +92,7 @@ a.navbar-brand {
 .solution-title {
     font-size: 1.8rem;
     text-align: center;
-    color: $white;
+    color: $blue;
 }
 
 .row-solution-item {
